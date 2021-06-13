@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 const Header = () => {
   return (
@@ -22,16 +22,20 @@ const Header = () => {
                 color: "#000",
                 fontSize: 40,
                 fontWeight: "700",
+                alignSelf: "center",
               }}
             >
-              ther.
+              ther
+              <Text style={{ color: "#1DB954" }}>.</Text>
             </Text>
           </View>
           <View style={{ marginTop: 10 }}>
-            <Image
-              source={require("../assets/icons8-send-letter-96.png")}
-              style={{ height: 45, width: 45 }}
-            />
+            <TouchableOpacity onPress={() => {}}>
+              <Image
+                source={require("../assets/icons8-send-letter-96.png")}
+                style={{ height: 35, width: 35, alignSelf: "center" }}
+              />
+            </TouchableOpacity>
           </View>
         </View>
       </View>

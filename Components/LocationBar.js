@@ -1,12 +1,12 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 const LocationBar = () => {
   return (
     <View>
       <View
         style={{
-          height: 45,
+          height: 35,
           width: "100%",
           backgroundColor: "#fff",
           padding: 10,
@@ -16,9 +16,16 @@ const LocationBar = () => {
       >
         <Image
           source={require("../assets/maps-and-flags.png")}
-          style={{ height: 25, width: 25 }}
+          style={{ height: 20, width: 20, alignSelf: "center" }}
         />
-        <Text style={{ fontSize: 18, marginLeft: 5, width: 200 }}>
+        <Text
+          style={{
+            fontSize: 15,
+            marginLeft: 5,
+            width: 170,
+            alignSelf: "center",
+          }}
+        >
           Chalakudy, Anamala Rd.
         </Text>
         <View
@@ -31,16 +38,18 @@ const LocationBar = () => {
             margin: 5,
           }}
         ></View>
-        <Text
-          style={{
-            fontSize: 18,
-            marginLeft: 5,
-            color: "#E50914",
-            fontWeight: "700",
-          }}
-        >
-          Change
-        </Text>
+        <TouchableOpacity style={{ alignSelf: "center" }} onPress={() => {}}>
+          <Text
+            style={{
+              fontSize: 15,
+              marginLeft: 5,
+              color: "#000",
+              fontWeight: "700",
+            }}
+          >
+            Change
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
