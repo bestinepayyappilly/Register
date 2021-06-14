@@ -12,6 +12,7 @@ const LocationBar = () => {
           padding: 10,
           flexDirection: "row",
           borderBottomWidth: 0.5,
+          borderBottomColor: "#000",
         }}
       >
         <Image
